@@ -7,49 +7,66 @@ This project implements an interactive **Postfix (Reverse Polish Notation) Calcu
 ## Features
 
 - Accepts multi-token postfix expressions (e.g., `3.5 1.2 +`)
-- Supports **floating-point arithmetic**
-- Supported operators: `+`, `-`, `*`, `/`, `%`
+- Supports floating-point arithmetic
+- Handles operators: `+`, `-`, `*`, `/`, `%`
 - Detects and reports:
   - Invalid tokens
   - Insufficient operands
-  - Division/modulo by zero
+  - Division or modulo by zero
   - Malformed expressions
-- Allows continuous interactive input (`exit` to quit)
+- Continuous interactive input (type `exit` to quit)
 
----
+## Concepts Covered
+- Stacks (data structures)
+- Expression parsing
+- Error handling and validation
+- Algorithmic problem solving
 
 ## How It Works
-
 Postfix expressions are evaluated using a stack:
 
-1. Numbers are pushed onto the stack.
-2. When an operator is encountered, two operands are popped.
-3. The operation is applied and the result is pushed back.
-4. At the end, the stack should contain exactly one result.
+1. Numbers are pushed onto the stack  
+2. When an operator is encountered, two operands are popped  
+3. The operation is applied  
+4. The result is pushed back onto the stack  
 
-Example:
-Input: 5 1 2 + 4 * + 3 -
-Evaluates to: 14.0000
+At completion, the stack contains a single result.
 
----
-
-## ▶ How to Run
-
-Compile and run the program from the terminal:
-
-```bash
-javac PostfixCalculator.java
-java PostfixCalculator
+## Example
+Input:
+```5 1 2 + 4 * + 3 -
+```
+Output
+```14.0000
 ```
 
+## How to Run
+
+1. Open the project in a Java IDE or terminal
+2. Compile:
+```bash
+javac PostfixCalculator.java
+```
+3. Run:
+```
+java PostfixCalculator
+```
+## Example Output
 Postfix Calculator (Supports floating-point numbers)
 Enter a postfix expression or type 'exit' to quit.
-
 Expression: 3.5 1.5 +
 Result: 5.0000
-
 Expression: 10 2 /
 Result: 5.0000
+Expression: exit
+Calculator terminated.
+
+## Future Improvements
+
+## Future Improvements
+- Add graphical user interface (GUI)
+- Support additional mathematical functions
+- Improve expression validation and error messaging
 
 Expression: exit
 Calculator terminated.
