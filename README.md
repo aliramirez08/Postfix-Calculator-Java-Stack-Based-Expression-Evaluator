@@ -28,11 +28,6 @@ This project implements an interactive Postfix (Reverse Polish Notation) Calcula
 ### Prerequisites
 - Java Development Kit (JDK 11+)
 
-## How to Run
-
-### Prerequisites
-- Java Development Kit (JDK 11+)
-
 ### Steps
 ```bash
 javac PostfixCalculator.java
