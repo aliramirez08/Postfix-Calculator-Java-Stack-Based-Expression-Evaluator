@@ -30,13 +30,12 @@ Postfix expressions are evaluated using a stack:
 
 At completion, the stack contains a single result.
 
-## Example
+## Postfix Evaluation Example
 
-Input:
-5 1 2 + 4 * + 3 -
-
-Output:
-14.0000
+```
+Expression: 5 1 2 + 4 * + 3 -
+Result:     14.0000
+```
 
 ## How to Run
 
